@@ -1,0 +1,10 @@
+from math import *
+
+while True:
+	formula = input('Enter a math formula. Or q to exit\n')
+	if formula == 'q': break
+	try:
+		result = eval(formula)
+		print('Result:', result)
+	except Exception as e:
+		print('Invalid formula!')
